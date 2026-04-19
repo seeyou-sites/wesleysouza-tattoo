@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p app components context hooks public/assets)",
+      "Bash(cp assets/*.png public/assets/)"
+    ]
+  }
+}
