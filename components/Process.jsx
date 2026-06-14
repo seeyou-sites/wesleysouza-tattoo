@@ -9,19 +9,19 @@ export default function Process() {
     {
       n: 'II',
       title: 'Referências',
-      desc: 'Monto o desenho autoral a partir da sua história e das referências. Você aprova, ajustamos o que precisar — só depois marcamos.',
+      desc: 'Monto o desenho autoral a partir da sua história e das referências. Você aprova, ajustamos o que precisar — só depois Tatuamos.',
       meta: 'Estudo · 3 a 7 dias',
     },
     {
       n: 'III',
       title: 'Sessão',
-      desc: 'Estúdio privativo, material descartável, tinta importada. Atendimento individual, do café ao fecho — sem corre, com música boa.',
+      desc: 'Estúdio privado, material descartável, o dia é reservado para o seu atendimento.',
       meta: 'Sala reservada · 1–8h',
     },
     {
       n: 'IV',
       title: 'Cicatrização',
-      desc: 'Você sai com uma cartilha de cuidados e meu contato direto. Retoque dentro de 60 dias, se necessário, é por minha conta.',
+      desc: 'Você sai com uma cartilha de cuidados e meu contato direto, podendo me contatar a qualquer horário sobre as mais diversas dúvidas. Retoque dentro de 60 dias, se necessário, é por minha conta.',
       meta: 'Pós · 14–30 dias',
     },
   ];

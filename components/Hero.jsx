@@ -20,7 +20,7 @@ export default function Hero() {
               <span className="l2">Souza</span>
             </h1>
             <p className="hero-sub">
-              <b>Lettering, preto &amp; cinza, geek e geométrico.</b> Cada agulha traça uma cicatriz de história — entre o gótico e o delicado, entre a lenda e a pele.
+              <b>Lettering, preto e cinza, geek.</b> Cada agulha traça uma cicatriz de história — entre o robusto e o delicado, entre a arte da agulha e a identidade.
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary" href={wppUrl} target="_blank" rel="noopener">
