@@ -54,9 +54,7 @@ export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [filterFading, setFilterFading] = useState(false);
 
-  const initial = ITEMS.slice(0, 3);
-  const more = ITEMS.slice(3);
-  const filteredMore = activeFilter === 'all' ? more : more.filter((it) => it.cat.includes(activeFilter));
+  const filteredAll = activeFilter === 'all' ? ITEMS : ITEMS.filter((it) => it.cat.includes(activeFilter));
 
   const handleFilter = (key) => {
     if (key === activeFilter) return;
@@ -69,6 +67,7 @@ export default function Portfolio() {
 
   const handleCollapse = () => {
     setExpanded(false);
+    setActiveFilter('all');
     document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -79,21 +78,23 @@ export default function Portfolio() {
           <h2><em>Portfólio</em><br />grimório visual</h2>
         </div>
 
-        <div className="gallery-initial reveal">
-          {initial.map((it) => (
-            <figure
-              key={it.id}
-              className="gitem-uniform"
-              onClick={() => setLightboxSrc(it.src)}
-            >
-              <img src={it.src} alt={it.alt} loading="lazy" />
-              <figcaption className="cap">
-                <div className="t">{it.t}</div>
-                <div className="n">{it.n}</div>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        {!expanded && (
+          <div className="gallery-initial reveal">
+            {ITEMS.slice(0, 3).map((it) => (
+              <figure
+                key={it.id}
+                className="gitem-uniform"
+                onClick={() => setLightboxSrc(it.src)}
+              >
+                <img src={it.src} alt={it.alt} loading="lazy" />
+                <figcaption className="cap">
+                  <div className="t">{it.t}</div>
+                  <div className="n">{it.n}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        )}
 
         {!expanded && (
           <div style={{ textAlign: 'center', marginTop: 32 }}>
@@ -119,7 +120,7 @@ export default function Portfolio() {
             </button>
           </aside>
           <div className={`pf-gallery${filterFading ? ' pf-fading' : ''}`}>
-            {filteredMore.map((it, i) => (
+            {filteredAll.map((it, i) => (
               <figure
                 key={it.id}
                 className={`gitem ${GRID[i % GRID.length]}`}
