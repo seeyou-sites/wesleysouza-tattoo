@@ -33,15 +33,14 @@ export default function Footer() {
           <div className="foot-col">
             <h4>Hora do estúdio</h4>
             <ul>
-              <li>Ter – Sáb · 10h às 20h</li>
-              <li>Dom – Seg · fechado</li>
+              <li>24h · 7 dias da semana</li>
               <li>Agendamento prévio</li>
             </ul>
           </div>
         </div>
         <div className="foot-bottom">
           <span>© 2026 Wesley Souza Tattoo · Todos os direitos reservados</span>
-          <span>Feito em SP por see you sites · Com agulha e paciência</span>
+          <span>Feito por seeyou sites</span>
         </div>
       </div>
     </footer>

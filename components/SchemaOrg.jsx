@@ -11,7 +11,7 @@ export default function SchemaOrg() {
     email: 'contato@wesleysouzatattoo.com',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Rua Travessa Dionísio de Alexandria, 21',
+      streetAddress: 'Rua Travessa Dionísio de Alexandria, 21 - Centro Sul, Moema Varginha',
       addressLocality: 'São Paulo',
       addressRegion: 'SP',
       addressCountry: 'BR',
@@ -21,14 +21,14 @@ export default function SchemaOrg() {
       latitude: '-23.5505',
       longitude: '-46.6333',
     },
-    image: 'https://wesley-souza-tattoo.com/assets/tattoo-wolf.png',
+    image: 'https://wesley-souza-tattoo.com/assets/tattoo-lobo-corvo-runas-vikingas.jpeg',
     priceRange: 'R$ 400+',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '10:00',
-        closes: '20:00',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        opens: '00:00',
+        closes: '23:59',
       },
     ],
     sameAs: [

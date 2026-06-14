@@ -20,11 +20,12 @@ export default function Studio() {
             <div className="studio-block">
               <span className="label">Endereço</span>
               <span className="val">Rua Travessa Dionísio de Alexandria, 21</span>
+              <span className="sub">Centro Sul, Moema Varginha</span>
               <span className="sub">São Paulo — SP</span>
             </div>
             <div className="studio-block">
               <span className="label">Atendimento</span>
-              <span className="val">Terça a sábado · 10h–20h</span>
+              <span className="val">24h · 7 dias da semana</span>
               <span className="sub">Sessões apenas com hora marcada</span>
             </div>
             <div className="studio-block">
