@@ -94,7 +94,7 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: 60 }}>
+        <div style={{ textAlign: 'center', marginTop: expanded ? 60 : 16 }}>
           <a
             href="https://www.instagram.com/wesley.souzatattoo"
             target="_blank"

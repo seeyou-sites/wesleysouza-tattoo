@@ -97,7 +97,7 @@ body.drawer-open .drawer{opacity:1;visibility:visible;transform:translateY(0);tr
 .sobre-img .c4{bottom:-10px;right:-10px;border-left:0;border-top:0}
 .sobre-img .badge{position:absolute;bottom:24px;left:24px;right:24px;display:flex;justify-content:space-between;align-items:end;z-index:2;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--bone)}
 .sobre-img .badge .r{color:var(--gold)}
-.sobre-copy h2{font-family:"UnifrakturCook",serif;font-size:clamp(44px,6vw,88px);line-height:.92;margin:16px 0 10px;color:var(--bone)}
+.sobre-copy h2{font-family:"UnifrakturCook",serif;font-size:clamp(44px,6vw,88px);line-height:.92;margin:16px 0 10px;color:var(--bone);text-align:left}
 .sobre-copy h2 em{color:var(--gold);font-style:italic}
 .sobre-copy p{font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.65;color:var(--bone-dim);margin:0 0 16px}
 .sobre-copy p b{color:var(--bone);font-weight:500}
