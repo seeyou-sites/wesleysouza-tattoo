@@ -23,7 +23,7 @@
   --blood:#6b1d14;
   --rule:rgba(217,117,30,.22);
   --rule-soft:rgba(240,230,200,.08);
-  --gradient-logo:linear-gradient(135deg,#8C3908 0%,#D9751E 35%,#F2A03D 70%,#F2B441 100%);
+  --gradient-logo:linear-gradient(135deg,#B8601F 0%,#D9751E 35%,#F2A03D 70%,#F2B441 100%);
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--bone);font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;text-align:justify}
