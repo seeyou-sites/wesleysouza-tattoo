@@ -117,7 +117,7 @@ export default function Portfolio() {
           style={{
             position: 'fixed',
             inset: 0,
-            background: 'rgba(5,4,3,.96)',
+            background: 'rgba(13,11,8,.98)',
             zIndex: 200,
             display: 'flex',
             alignItems: 'center',
@@ -133,7 +133,7 @@ export default function Portfolio() {
               maxWidth: '90vw',
               maxHeight: '90vh',
               boxShadow: '0 30px 100px rgba(0,0,0,.9)',
-              border: '1px solid rgba(201,168,106,.4)',
+              border: '1px solid rgba(200,146,42,.4)',
             }}
           />
         </div>

@@ -40,9 +40,9 @@ export default function Styles() {
               <svg viewBox="0 0 120 90" width="100%" height="90">
                 <defs>
                   <radialGradient id="g1">
-                    <stop offset="0" stopColor="#e9dfce" />
+                    <stop offset="0" stopColor="#f0e6c8" />
                     <stop offset=".55" stopColor="#5e554a" />
-                    <stop offset="1" stopColor="#0a0908" />
+                    <stop offset="1" stopColor="#0d0b08" />
                   </radialGradient>
                 </defs>
                 <circle cx="60" cy="45" r="30" fill="url(#g1)" />
