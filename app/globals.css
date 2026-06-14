@@ -372,6 +372,8 @@ footer{padding:32px 0 20px;border-top:1px solid var(--rule-soft);background:#0a0
 .foot-col h4{padding:.1em .05em .15em}
 /* mono labels and small decorative chars — minimal padding, no layout impact */
 .brand-sub,.sobre-img .badge .r,.style-n,.gitem .cap .n,.filter-bar .label,.p-meta,.studio-block .label,.faq-n,.marquee-track .dot,.stars{padding:.05em .05em .1em}
+/* process "ritual" — inline-block so vertical padding creates real layout space */
+.process .sec-head h2 em{display:inline-block;padding:.15em .1em}
 
 /* accent variants */
 body[data-accent="blood"]{ --gold:#b23024; --gold-dim:#6b1d14 }
