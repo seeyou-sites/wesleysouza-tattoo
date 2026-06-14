@@ -3,6 +3,14 @@ import { useState } from 'react';
 
 const GRID = ['g-a','g-b','g-c','g-d','g-e','g-f','g-g','g-h','g-i'];
 
+const FILTERS = [
+  { key: 'all',       label: 'Todos' },
+  { key: 'pb',        label: 'P & B' },
+  { key: 'geek',      label: 'Geek' },
+  { key: 'lettering', label: 'Lettering' },
+  { key: 'geo',       label: 'Geo' },
+];
+
 const ITEMS = [
   { id: 1,  cat: ['geek','pb'],       src: '/assets/tattoo-coringa-joker-batman-antebraco.jpeg',      alt: 'Coringa Joker Batman antebraço',        t: 'Coringa',       n: 'Geek · P&B' },
   { id: 2,  cat: ['pb'],              src: '/assets/tattoo-poseidon-guerreiro-grego.jpeg',             alt: 'Poseidon guerreiro grego',               t: 'Poseidon',      n: 'Mitologia · P&B' },
@@ -43,9 +51,26 @@ const ITEMS = [
 export default function Portfolio() {
   const [expanded, setExpanded] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
+  const [activeFilter, setActiveFilter] = useState('all');
+  const [filterFading, setFilterFading] = useState(false);
 
   const initial = ITEMS.slice(0, 3);
   const more = ITEMS.slice(3);
+  const filteredMore = activeFilter === 'all' ? more : more.filter((it) => it.cat.includes(activeFilter));
+
+  const handleFilter = (key) => {
+    if (key === activeFilter) return;
+    setFilterFading(true);
+    setTimeout(() => {
+      setActiveFilter(key);
+      setFilterFading(false);
+    }, 200);
+  };
+
+  const handleCollapse = () => {
+    setExpanded(false);
+    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section className="portfolio" id="portfolio">
@@ -78,20 +103,36 @@ export default function Portfolio() {
           </div>
         )}
 
-        <div className={`gallery-more${expanded ? ' expanded' : ''}`}>
-          {more.map((it, i) => (
-            <figure
-              key={it.id}
-              className={`gitem ${GRID[i % GRID.length]}`}
-              onClick={() => setLightboxSrc(it.src)}
-            >
-              <img src={it.src} alt={it.alt} loading="lazy" />
-              <figcaption className="cap">
-                <div className="t">{it.t}</div>
-                <div className="n">{it.n}</div>
-              </figcaption>
-            </figure>
-          ))}
+        <div className={`pf-area${expanded ? ' pf-area--open' : ''}`}>
+          <aside className="pf-sidebar">
+            {FILTERS.map((f) => (
+              <button
+                key={f.key}
+                className={`pf-filter${activeFilter === f.key ? ' active' : ''}`}
+                onClick={() => handleFilter(f.key)}
+              >
+                {f.label}
+              </button>
+            ))}
+            <button className="pf-collapse" onClick={handleCollapse}>
+              ↑ Ver menos
+            </button>
+          </aside>
+          <div className={`pf-gallery${filterFading ? ' pf-fading' : ''}`}>
+            {filteredMore.map((it, i) => (
+              <figure
+                key={it.id}
+                className={`gitem ${GRID[i % GRID.length]}`}
+                onClick={() => setLightboxSrc(it.src)}
+              >
+                <img src={it.src} alt={it.alt} loading="lazy" />
+                <figcaption className="cap">
+                  <div className="t">{it.t}</div>
+                  <div className="n">{it.n}</div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
 
         <div style={{ textAlign: 'center', marginTop: expanded ? 60 : 16 }}>
