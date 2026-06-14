@@ -8,10 +8,6 @@ export default function Studio() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2>O <em>estúdio</em></h2>
-          <div className="right">
-            <span className="mono">· CAP. VI — ENDEREÇO</span>
-            <p>Atendimento por hora marcada. Ambiente privativo, trilha boa, café na mão.</p>
-          </div>
         </div>
 
         <div className="studio-grid reveal">

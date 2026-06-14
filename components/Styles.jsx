@@ -5,7 +5,6 @@ export default function Styles() {
         <div className="sec-head reveal">
           <h2>As quatro <em>artes</em><br />que cultivo</h2>
           <div className="right">
-            <span className="mono">· CAP. I — ESPECIALIDADES</span>
             <p>
               Do risco cerrado do lettering à sombra profunda do realismo. Cada estilo é um dialeto diferente da mesma língua: a tua história.
             </p>

@@ -17,8 +17,7 @@ export default function Sobre() {
             </div>
           </div>
           <div className="sobre-copy">
-            <span className="mono" style={{ color: 'var(--gold)' }}>· CAP. 0 — SOBRE O ARTISTA</span>
-            <h2>Entre <em>agulha</em> e história,<br />existe alguém escutando</h2>
+            <h2>Entre <em>agulha</em> e história, existe alguém escutando</h2>
             <p>
               <b>Wesley Souza</b> é um tatuador autoral paulistano dedicado ao preto &amp; cinza, ao lettering e à arte geek. Dedicado a ouvir, comprometido a entender diversos estilos, buscando trazer os melhores resultados.
             </p>

@@ -40,62 +40,58 @@ const ITEMS = [
   { id: 34, cat: ['pb'],              src: '/assets/tattoo-tigre-colorido-perna.jpeg',                alt: 'Tigre colorido perna',                   t: 'Tigre',         n: 'P&B · Animal' },
 ];
 
-const FILTERS = [
-  { key: 'all',       label: 'Todos' },
-  { key: 'lettering', label: 'Lettering' },
-  { key: 'pb',        label: 'Preto & Cinza' },
-  { key: 'geek',      label: 'Geek' },
-  { key: 'geo',       label: 'Geométrico' },
-];
-
 export default function Portfolio() {
-  const [filter, setFilter] = useState('all');
+  const [expanded, setExpanded] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
+
+  const initial = ITEMS.slice(0, 3);
+  const more = ITEMS.slice(3);
 
   return (
     <section className="portfolio" id="portfolio">
       <div className="wrap">
         <div className="sec-head reveal">
           <h2><em>Portfólio</em><br />grimório visual</h2>
-          <div className="right">
-            <span className="mono">· CAP. II — PEÇAS AUTORAIS</span>
-            <p>
-              Recortes do que passou pela agulha. Toque ou clique em uma peça para ver detalhe — cada uma carrega uma história, nenhuma se repete.
-            </p>
-          </div>
         </div>
 
-        <div className="filter-bar reveal">
-          <span className="label">Filtrar</span>
-          {FILTERS.map((f) => (
-            <button
-              key={f.key}
-              className={`filter${filter === f.key ? ' active' : ''}`}
-              onClick={() => setFilter(f.key)}
+        <div className="gallery-initial reveal">
+          {initial.map((it) => (
+            <figure
+              key={it.id}
+              className="gitem-uniform"
+              onClick={() => setLightboxSrc(it.src)}
             >
-              {f.label}
-            </button>
+              <img src={it.src} alt={it.alt} loading="lazy" />
+              <figcaption className="cap">
+                <div className="t">{it.t}</div>
+                <div className="n">{it.n}</div>
+              </figcaption>
+            </figure>
           ))}
         </div>
 
-        <div className="gallery reveal">
-          {ITEMS.map((it, i) => {
-            const show = filter === 'all' || it.cat.includes(filter);
-            return (
-              <figure
-                key={it.id}
-                className={`gitem ${GRID[i % GRID.length]}`}
-                style={{ display: show ? '' : 'none' }}
-                onClick={() => setLightboxSrc(it.src)}
-              >
-                <img src={it.src} alt={it.alt} loading="lazy" />
-                <figcaption className="cap">
-                  <div className="t">{it.t}</div>
-                  <div className="n">{it.n}</div>
-                </figcaption>
-              </figure>
-            );
-          })}
+        {!expanded && (
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <button className="btn btn-ghost" onClick={() => setExpanded(true)}>
+              Ver mais
+            </button>
+          </div>
+        )}
+
+        <div className={`gallery-more${expanded ? ' expanded' : ''}`}>
+          {more.map((it, i) => (
+            <figure
+              key={it.id}
+              className={`gitem ${GRID[i % GRID.length]}`}
+              onClick={() => setLightboxSrc(it.src)}
+            >
+              <img src={it.src} alt={it.alt} loading="lazy" />
+              <figcaption className="cap">
+                <div className="t">{it.t}</div>
+                <div className="n">{it.n}</div>
+              </figcaption>
+            </figure>
+          ))}
         </div>
 
         <div style={{ textAlign: 'center', marginTop: 60 }}>

@@ -31,12 +31,6 @@ export default function Process() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2>O <em>ritual</em><br />da agulha</h2>
-          <div className="right">
-            <span className="mono">· CAP. III — PROCESSO</span>
-            <p>
-              Uma tatuagem boa começa muito antes da máquina ligar. Veja como trabalhamos juntos, da primeira conversa ao cuidado final.
-            </p>
-          </div>
         </div>
 
         <div className="process-grid reveal">

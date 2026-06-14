@@ -36,10 +36,6 @@ export default function Faq() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2><em>Perguntas</em><br />que chegam sempre</h2>
-          <div className="right">
-            <span className="mono">· CAP. V — FAQ</span>
-            <p>Se ainda ficou alguma dúvida, chama no WhatsApp — prefiro responder no olho.</p>
-          </div>
         </div>
 
         <div className="faq-list reveal">

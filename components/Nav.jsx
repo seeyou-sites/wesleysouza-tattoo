@@ -47,22 +47,7 @@ export default function Nav() {
     <nav className="nav" ref={navRef}>
       <div className="nav-in">
         <div className="brand">
-          <div className="brand-mark">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.2"
-              style={{ color: 'var(--gold)' }}
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1" />
-            </svg>
-          </div>
-          <div>
-            <span className="brand-name">Wesley Souza</span>
-            <span className="brand-sub">Tattoo Artist · SP</span>
-          </div>
+          <img src="/assets/logo.png" alt="Wesley Souza Tattoo" className="brand-logo" />
         </div>
         <div className="nav-links" ref={linksRef}>
           <a href="#inicio" data-nav="inicio">Início</a>

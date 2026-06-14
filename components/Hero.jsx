@@ -5,20 +5,14 @@ export default function Hero() {
   const { state, wppUrl } = useTweaks();
 
   return (
-    <header className="hero" id="inicio" style={{ paddingTop: 60, paddingBottom: 200 }}>
+    <header className="hero" id="inicio" style={{ paddingTop: 60 }}>
       <div className="hero-bg">
         <img src={state.hero} alt="" />
       </div>
       <div className="wrap">
         <div className="hero-in">
           <div className="hero-meta">
-            <div className="hero-tag mono">
-              <span className="line"></span> EST. 2022 · SÃO PAULO · BRASIL
-            </div>
-            <h1 className="hero-title">
-              Wesley<br />
-              <span className="l2">Souza</span>
-            </h1>
+            <img src="/assets/logo.png" alt="Wesley Souza Tattoo" className="hero-logo" />
             <p className="hero-sub">
               <b>Lettering, preto e cinza, geek.</b> Cada agulha traça uma cicatriz de história — entre o robusto e o delicado, entre a arte da agulha e a identidade.
             </p>
@@ -44,15 +38,6 @@ export default function Hero() {
             <span className="dot"></span>
             <span>@WESLEY.SOUZATATTOO</span>
           </div>
-        </div>
-      </div>
-      <div className="hero-stats wrap">
-        <div className="stat"><div className="stat-n">4+</div><div className="stat-l">Anos de agulha</div></div>
-        <div className="stat"><div className="stat-n">1.4k</div><div className="stat-l">Peças autorais</div></div>
-        <div className="stat"><div className="stat-n">4</div><div className="stat-l">Especialidades</div></div>
-        <div className="stat"><div className="stat-n">∞</div><div className="stat-l">Histórias na pele</div></div>
-        <div className="hero-scroll">
-          <span>Role</span><span className="arrow"></span>
         </div>
       </div>
     </header>

@@ -25,10 +25,6 @@ export default function Testimonials() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2>Palavras dos <em>marcados</em></h2>
-          <div className="right">
-            <span className="mono">· CAP. IV — DEPOIMENTOS</span>
-            <p>Quem já passou pela agulha — e voltou para mais.</p>
-          </div>
         </div>
 
         <div className="testi-grid reveal">
