@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         />
         <SchemaOrg />
       </head>
-      <body className="grain">
+      <body className="grain" suppressHydrationWarning>
         <TweaksProvider>{children}</TweaksProvider>
       </body>
     </html>
