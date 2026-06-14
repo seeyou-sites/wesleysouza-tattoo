@@ -176,7 +176,7 @@ export default function Portfolio() {
               maxWidth: '90vw',
               maxHeight: '90vh',
               boxShadow: '0 30px 100px rgba(0,0,0,.9)',
-              border: '1px solid rgba(200,146,42,.4)',
+              border: '1px solid rgba(217,117,30,.4)',
             }}
           />
         </div>
