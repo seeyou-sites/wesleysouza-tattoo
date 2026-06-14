@@ -357,6 +357,22 @@ footer{padding:32px 0 20px;border-top:1px solid var(--rule-soft);background:#0a0
 /* gradient text — mono labels and decorative characters */
 .brand-sub,.sobre-img .badge .r,.style-n,.gitem .cap .n,.filter-bar .label,.p-meta,.studio-block .label,.faq-n,.marquee-track .dot,.t-card .mark,.stars{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
+/* ——— GRADIENT TEXT CLIP FIX ——— */
+/* Padding expands the element's background area so background-clip:text
+   fully covers ascenders, descenders, and diagonal blackletter strokes.
+   For inline <em> elements, padding extends the paint area without
+   disturbing the line-height or surrounding layout. */
+/* heading <em> accents — inline: expands clip area, does not push lines apart */
+.sec-head h2 em,.sobre-copy h2 em,.quote-band blockquote em,.cta h2 em,.studio-info h3 em{padding:.1em .05em .2em}
+/* parent headings — prevent any implicit overflow clipping */
+.sec-head h2,.sobre-copy h2,.quote-band blockquote,.cta h2,.studio-info h3{overflow:visible}
+/* large display numerals — UnifrakturCook ascenders run tall */
+.sobre-fact .fn,.stat-n,.p-n,.sobre-sig .signame{padding:.1em .05em .15em}
+/* footer headings */
+.foot-col h4{padding:.1em .05em .15em}
+/* mono labels and small decorative chars — minimal padding, no layout impact */
+.brand-sub,.sobre-img .badge .r,.style-n,.gitem .cap .n,.filter-bar .label,.p-meta,.studio-block .label,.faq-n,.marquee-track .dot,.stars{padding:.05em .05em .1em}
+
 /* accent variants */
 body[data-accent="blood"]{ --gold:#b23024; --gold-dim:#6b1d14 }
 body[data-accent="bone"]{ --gold:#f0e6c8; --gold-dim:#a09072 }
