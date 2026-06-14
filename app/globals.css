@@ -355,7 +355,8 @@ body[data-atmos="off"] .hero-bg img{opacity:.35}
   .studio-info .btn{align-self:center}
   .fab .txt{display:none}
   /* mobile centering — hero */
-  .hero-meta{text-align:center;align-items:center}
+  .hero-in{grid-template-columns:1fr}
+  .hero-meta{text-align:center;align-items:center;max-width:100%}
   .hero-tag{align-self:center}
   .hero-actions{justify-content:center}
   .hero-stats{justify-content:center}
@@ -364,10 +365,12 @@ body[data-atmos="off"] .hero-bg img{opacity:.35}
   .sobre-sig{justify-content:center}
   .sobre-facts{justify-items:center}
   /* mobile centering — process */
-  .p-step{text-align:center;align-items:center}
+  .process-grid{grid-template-columns:1fr}
+  .p-step{text-align:center;align-items:center;min-height:0}
   .p-meta{text-align:center;width:100%}
   /* mobile centering — styles */
-  .style-card{text-align:center;align-items:center}
+  .styles-grid{grid-template-columns:1fr}
+  .style-card{text-align:center;align-items:center;border-right:0}
   .style-tags{justify-content:center}
   /* mobile centering — testimonials */
   .t-card{text-align:center}
@@ -377,7 +380,7 @@ body[data-atmos="off"] .hero-bg img{opacity:.35}
   /* mobile centering — quote / cta / footer */
   .quote-band blockquote{text-align:center}
   .cta{text-align:center}
-  .foot-top{text-align:center}
+  .foot-top{grid-template-columns:1fr;text-align:center}
   .foot-bottom{justify-content:center;text-align:center}
   .foot-col ul{align-items:center}
   .filter-bar{justify-content:center}
