@@ -23,7 +23,7 @@
   --blood:#6b1d14;
   --rule:rgba(217,117,30,.22);
   --rule-soft:rgba(240,230,200,.08);
-  --gradient-logo:linear-gradient(135deg,#F2B441 0%,#F2A03D 35%,#D9751E 70%,#8C3908 100%);
+  --gradient-logo:linear-gradient(135deg,#8C3908 0%,#D9751E 35%,#F2A03D 70%,#F2B441 100%);
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--bone);font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;text-align:justify}
@@ -331,9 +331,13 @@ footer{padding:32px 0 20px;border-top:1px solid var(--rule-soft);background:#0a0
 .hero-tag .line,.hero-scroll .arrow{background:var(--gold-dark)}
 
 /* ——— LOGO GRADIENT APPLICATIONS ——— */
-/* gradient fills — primary button and active filter pill */
+/* gradient fills — primary button, floating CTA and active filter pill */
 .btn-primary{background:var(--gradient-logo)}
 .btn-primary:hover{background:var(--bone);border-color:var(--bone)}
+.fab{background:var(--gradient-logo);color:var(--bg);border-color:var(--gold-dark)}
+.fab:hover{background:var(--bone);color:var(--bg)}
+.fab .ic{background:rgba(13,11,8,.28);color:var(--bone)}
+.fab:hover .ic{background:var(--bg);color:var(--gold)}
 .pf-filter.active{background:var(--gradient-logo)}
 /* gradient borders — outlined CTA, decorative corners, map pin */
 .nav-cta{border-image:var(--gradient-logo) 1}
