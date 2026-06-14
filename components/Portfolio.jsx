@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 const GRID = ['g-a','g-b','g-c','g-d','g-e','g-f','g-g','g-h','g-i'];
 
@@ -53,6 +53,7 @@ export default function Portfolio() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
   const [activeFilter, setActiveFilter] = useState('all');
   const [filterFading, setFilterFading] = useState(false);
+  const wasExpanded = useRef(false);
 
   const filteredAll = activeFilter === 'all' ? ITEMS : ITEMS.filter((it) => it.cat.includes(activeFilter));
 
@@ -79,7 +80,7 @@ export default function Portfolio() {
         </div>
 
         {!expanded && (
-          <div className="gallery-initial reveal">
+          <div className={`gallery-initial${wasExpanded.current ? '' : ' reveal'}`}>
             {ITEMS.slice(0, 3).map((it) => (
               <figure
                 key={it.id}
@@ -98,7 +99,7 @@ export default function Portfolio() {
 
         {!expanded && (
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <button className="btn btn-ghost" onClick={() => setExpanded(true)}>
+            <button className="btn btn-ghost" onClick={() => { wasExpanded.current = true; setExpanded(true); }}>
               Ver mais
             </button>
           </div>
