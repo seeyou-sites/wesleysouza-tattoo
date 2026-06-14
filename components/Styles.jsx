@@ -4,11 +4,6 @@ export default function Styles() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2>As quatro <em>artes</em><br />que cultivo</h2>
-          <div className="right">
-            <p>
-              Do risco cerrado do lettering à sombra profunda do realismo. Cada estilo é um dialeto diferente da mesma língua: a tua história.
-            </p>
-          </div>
         </div>
 
         <div className="styles-grid reveal">
