@@ -5,7 +5,7 @@ const defaults = {
   accent: 'gold',
   font: 'pirate',
   atmos: 'on',
-  hero: '/assets/tattoo-wolf.png',
+  hero: '/assets/tattoo-lobo-corvo-runas-vikingas.jpeg',
   whatsapp: '5511976950005',
   whatsappMessage: 'Olá Wesley! Vim pelo site e quero fazer um orçamento de tatuagem.',
 };

@@ -8,7 +8,7 @@ const ITEMS = [
   },
   {
     q: 'Qual é o valor mínimo de sessão?',
-    a: 'A sessão mínima fica por R$ 400 e inclui material descartável, tinta importada e todo o trabalho de desenho autoral. Peças maiores são fechadas por hora ou por projeto.',
+    a: 'A sessão mínima fica por R$ 400 e inclui material descartável e todo o trabalho de desenho autoral. Peças maiores são fechadas por hora ou por projeto.',
   },
   {
     q: 'Faço cover-up de tatuagem antiga?',
@@ -36,10 +36,6 @@ export default function Faq() {
       <div className="wrap">
         <div className="sec-head reveal">
           <h2><em>Perguntas</em><br />que chegam sempre</h2>
-          <div className="right">
-            <span className="mono">· CAP. V — FAQ</span>
-            <p>Se ainda ficou alguma dúvida, chama no WhatsApp — prefiro responder no olho.</p>
-          </div>
         </div>
 
         <div className="faq-list reveal">

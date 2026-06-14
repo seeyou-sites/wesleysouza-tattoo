@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react';
 import { useTweaks } from '@/context/TweaksContext';
 
 const SWATCHES = [
-  { key: 'gold', bg: '#c9a86a', title: 'Ouro velho' },
+  { key: 'gold', bg: '#F2A03D', title: 'Ouro' },
   { key: 'blood', bg: '#b23024', title: 'Sangue' },
-  { key: 'bone', bg: '#e9dfce', title: 'Osso' },
+  { key: 'bone', bg: '#f0e6c8', title: 'Osso' },
   { key: 'ember', bg: '#d47842', title: 'Brasa' },
 ];
 
