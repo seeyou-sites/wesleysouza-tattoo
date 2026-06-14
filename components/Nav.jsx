@@ -75,7 +75,7 @@ export default function Nav() {
         </div>
         <div className="nav-right">
           <a href={wppUrl} target="_blank" rel="noopener" className="nav-cta">
-            Orçamento
+            <span>Orçamento</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>

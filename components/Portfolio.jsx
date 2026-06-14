@@ -23,7 +23,7 @@ const ITEMS = [
   { id: 17, cat: ['lettering','pb'],  src: '/assets/tattoo-maos-saudade-pai-frase.jpeg',              alt: 'Mãos saudade pai frase',                 t: 'Saudade',       n: 'Lettering · P&B' },
   { id: 18, cat: ['lettering'],       src: '/assets/tattoo-lettering-stencil-colorido.jpeg',          alt: 'Lettering stencil colorido',             t: 'Stencil',       n: 'Lettering · Cor' },
   { id: 19, cat: ['geek'],            src: '/assets/tattoo-chucky-boneco-perna.jpeg',                 alt: 'Chucky boneco perna',                    t: 'Chucky',        n: 'Geek · Horror' },
-  { id: 20, cat: ['pb'],              src: '/assets/tattoo-vampiro-duplo-gregas-perna.jpeg',           alt: 'Vampiro duplo gregas perna',             t: 'Vampiro',       n: 'P&B · Gótico' },
+  { id: 20, cat: ['pb'],              src: '/assets/tattoo-vampiro-duplo-gregas-perna.jpeg',           alt: 'Medusa dupla gregas perna',              t: 'Medusa',        n: 'P&B · Mitologia' },
   { id: 21, cat: ['geo','pb'],        src: '/assets/tattoo-relogio-bussola-olho-rosa.jpeg',           alt: 'Relógio bússola olho rosa',              t: 'Tempus Fugit',  n: 'Geométrico · P&B' },
   { id: 22, cat: ['pb'],              src: '/assets/tattoo-rosto-feminino-dinheiro-perna.jpeg',        alt: 'Rosto feminino dinheiro perna',          t: 'Money',         n: 'P&B · Chicano' },
   { id: 23, cat: ['pb'],              src: '/assets/tattoo-medalha-sao-bento.jpeg',                   alt: 'Medalha São Bento',                      t: 'São Bento',     n: 'Religioso · P&B' },
