@@ -23,6 +23,7 @@
   --blood:#6b1d14;
   --rule:rgba(217,117,30,.22);
   --rule-soft:rgba(240,230,200,.08);
+  --gradient-logo:linear-gradient(135deg,#F2B441 0%,#F2A03D 35%,#D9751E 70%,#8C3908 100%);
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--bone);font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;text-align:justify}
@@ -328,6 +329,29 @@ footer{padding:32px 0 20px;border-top:1px solid var(--rule-soft);background:#0a0
 .brand-mark,.sobre-img .corner,.map .pin-label{border-color:var(--gold-dark)}
 /* dark #D9751E: decorative lines */
 .hero-tag .line,.hero-scroll .arrow{background:var(--gold-dark)}
+
+/* ——— LOGO GRADIENT APPLICATIONS ——— */
+/* gradient fills — primary button and active filter pill */
+.btn-primary{background:var(--gradient-logo)}
+.btn-primary:hover{background:var(--bone);border-color:var(--bone)}
+.pf-filter.active{background:var(--gradient-logo)}
+/* gradient borders — outlined CTA, decorative corners, map pin */
+.nav-cta{border-image:var(--gradient-logo) 1}
+.nav-cta:hover{background:var(--gradient-logo);color:var(--bg)}
+.sobre-img .corner{border-image:var(--gradient-logo) 1}
+.map .pin-label{border-image:var(--gradient-logo) 1}
+/* gradient lines — nav underline, hero decorative lines */
+.nav-links a::after,.hero-tag .line,.hero-scroll .arrow{background:var(--gradient-logo)}
+/* gradient text — heading <em> accents */
+.sec-head h2 em,.sobre-copy h2 em,.quote-band blockquote em,.cta h2 em,.studio-info h3 em{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* gradient text — large display numerals (KPI, process, stats) */
+.sobre-fact .fn,.stat-n,.p-n{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* gradient text — gothic signature */
+.sobre-sig .signame{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* gradient text — footer headings */
+.foot-col h4{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* gradient text — mono labels and decorative characters */
+.brand-sub,.sobre-img .badge .r,.style-n,.gitem .cap .n,.filter-bar .label,.p-meta,.studio-block .label,.faq-n,.marquee-track .dot,.t-card .mark,.stars{background:var(--gradient-logo);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 /* accent variants */
 body[data-accent="blood"]{ --gold:#b23024; --gold-dim:#6b1d14 }
