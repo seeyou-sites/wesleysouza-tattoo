@@ -81,7 +81,8 @@ body.drawer-open .nav-burger span:nth-child(1){transform:translateY(6px) rotate(
 body.drawer-open .nav-burger span:nth-child(2){opacity:0}
 body.drawer-open .nav-burger span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
 
-.drawer{position:fixed;inset:70px 0 0 0;z-index:49;background:rgba(13,11,8,.98);backdrop-filter:blur(12px);display:flex;flex-direction:column;gap:6px;padding:40px;border-top:1px solid var(--rule);opacity:0;visibility:hidden;transform:translateY(-14px);transition:opacity .32s ease,transform .32s ease,visibility 0s linear .32s;pointer-events:none}
+body.drawer-open{overflow:hidden}
+.drawer{position:fixed;inset:70px 0 0 0;z-index:49;background:rgba(13,11,8,.98);backdrop-filter:blur(12px);display:flex;flex-direction:column;gap:6px;padding:40px;border-top:1px solid var(--rule);opacity:0;visibility:hidden;transform:translateY(-14px);transition:opacity .32s ease,transform .32s ease,visibility 0s linear .32s;pointer-events:none;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
 body.drawer-open .drawer{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .32s ease,transform .32s ease,visibility 0s linear 0s;pointer-events:auto}
 .drawer a{font-family:"UnifrakturCook",serif;font-size:32px;color:var(--bone);padding:14px 0;border-bottom:1px solid var(--rule-soft)}
 .drawer a:last-of-type{border-bottom:0}
