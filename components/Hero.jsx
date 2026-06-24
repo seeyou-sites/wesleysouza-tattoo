@@ -5,7 +5,7 @@ export default function Hero() {
   const { state, wppUrl } = useTweaks();
 
   return (
-    <header className="hero" id="inicio" style={{ paddingTop: 60 }}>
+    <header className="hero" id="inicio">
       <div className="hero-bg">
         <img src={state.hero} alt="" />
       </div>
