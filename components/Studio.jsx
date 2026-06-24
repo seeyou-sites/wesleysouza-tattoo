@@ -15,8 +15,8 @@ export default function Studio() {
             <h3>Onde a <em>agulha</em> canta</h3>
             <div className="studio-block">
               <span className="label">Endereço</span>
-              <span className="val">Rua Travessa Dionísio de Alexandria, 21</span>
-              <span className="sub">Zona Sul, Varginha — em breve no centro</span>
+              <span className="val">R. Samuel Laurence, 145/153</span>
+              <span className="sub">Jardim Maria Fernandes</span>
               <span className="sub">São Paulo — SP</span>
             </div>
             <div className="studio-block">
@@ -50,8 +50,8 @@ export default function Studio() {
 
           <div className="map">
             <iframe
-              title="Localização do estúdio — Rua Travessa Dionísio de Alexandria, 21, Varginha"
-              src="https://www.google.com/maps?q=Rua%20Travessa%20Dion%C3%ADsio%20de%20Alexandria%2C%2021%2C%20Varginha%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"
+              title="Localização do estúdio — R. Samuel Laurence, 145/153, Jardim Maria Fernandes, São Paulo"
+              src="https://www.google.com/maps?q=R.%20Samuel%20Laurence%2C%20145%2F153%2C%20Jardim%20Maria%20Fernandes%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               allowFullScreen
