@@ -16,7 +16,7 @@ export default function Studio() {
             <div className="studio-block">
               <span className="label">Endereço</span>
               <span className="val">Rua Travessa Dionísio de Alexandria, 21</span>
-              <span className="sub">Centro Sul, Moema Varginha</span>
+              <span className="sub">Zona Sul, Varginha — em breve no centro</span>
               <span className="sub">São Paulo — SP</span>
             </div>
             <div className="studio-block">
@@ -49,65 +49,13 @@ export default function Studio() {
           </div>
 
           <div className="map">
-            <svg viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-                  <path d="M24 0H0V24" fill="none" stroke="rgba(217,117,30,.06)" strokeWidth=".5" />
-                </pattern>
-                <radialGradient id="spot" cx="50%" cy="50%" r="40%">
-                  <stop offset="0" stopColor="rgba(217,117,30,.18)" />
-                  <stop offset="1" stopColor="rgba(217,117,30,0)" />
-                </radialGradient>
-              </defs>
-              <rect width="600" height="560" fill="#0f0c07" />
-              <rect width="600" height="560" fill="url(#grid)" />
-              <rect width="600" height="560" fill="url(#spot)" />
-              <path d="M-20 340 Q 120 300 220 360 T 500 320 T 700 380" stroke="rgba(217,117,30,.28)" strokeWidth="14" fill="none" strokeLinecap="round" />
-              <path d="M-20 340 Q 120 300 220 360 T 500 320 T 700 380" stroke="rgba(217,117,30,.12)" strokeWidth="26" fill="none" strokeLinecap="round" />
-              <g stroke="rgba(240,230,200,.22)" strokeWidth="1.2" fill="none">
-                <path d="M0 120 L600 180" />
-                <path d="M0 240 L600 260" />
-                <path d="M0 460 L600 420" />
-                <path d="M80 0 L120 560" />
-                <path d="M260 0 L300 560" />
-                <path d="M420 0 L460 560" />
-                <path d="M540 0 L560 560" />
-              </g>
-              <g stroke="rgba(240,230,200,.1)" strokeWidth=".6" fill="none">
-                <path d="M0 60 L600 80" />
-                <path d="M0 180 L600 220" />
-                <path d="M0 380 L600 380" />
-                <path d="M40 0 L60 560" />
-                <path d="M180 0 L220 560" />
-                <path d="M360 0 L380 560" />
-                <path d="M500 0 L520 560" />
-              </g>
-              <g fill="rgba(217,117,30,.04)" stroke="rgba(217,117,30,.12)" strokeWidth=".5">
-                <rect x="120" y="70" width="130" height="100" />
-                <rect x="280" y="80" width="90" height="90" />
-                <rect x="390" y="100" width="90" height="80" />
-                <rect x="140" y="250" width="110" height="120" />
-                <rect x="320" y="220" width="90" height="80" />
-                <rect x="450" y="240" width="100" height="140" />
-                <rect x="60" y="400" width="140" height="120" />
-                <rect x="240" y="400" width="100" height="100" />
-                <rect x="380" y="430" width="140" height="90" />
-              </g>
-              <g stroke="rgba(217,117,30,.5)" strokeWidth=".6" fill="none" strokeDasharray="3 4">
-                <circle cx="300" cy="280" r="80" />
-                <circle cx="300" cy="280" r="140" />
-              </g>
-              <g transform="translate(540,60)" fill="none" stroke="var(--gold)" strokeWidth="1" style={{ color: '#F2A03D' }}>
-                <circle cx="0" cy="0" r="22" />
-                <circle cx="0" cy="0" r="14" />
-                <path d="M0 -22 L4 0 L0 22 L-4 0Z" fill="currentColor" />
-                <text x="0" y="-28" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="8" fill="currentColor" letterSpacing="1">N</text>
-              </g>
-            </svg>
-            <div className="pin">
-              <span className="pin-label">WESLEY · TATTOO</span>
-              <span className="pin-dot"></span>
-            </div>
+            <iframe
+              title="Localização do estúdio — Rua Travessa Dionísio de Alexandria, 21, Varginha"
+              src="https://www.google.com/maps?q=Rua%20Travessa%20Dion%C3%ADsio%20de%20Alexandria%2C%2021%2C%20Varginha%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
