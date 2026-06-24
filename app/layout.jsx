@@ -10,7 +10,7 @@ export const metadata = {
   creator: 'Wesley Souza',
   openGraph: {
     type: 'website',
-    url: 'https://wesley-souza-tattoo.com',
+    url: 'https://wesleysouza-tattoo.vercel.app',
     title: 'Wesley Souza — Tatuador Autoral | Lettering, Preto & Cinza',
     description: 'Tatuador autoral paulistano especializado em lettering, preto & cinza, arte geek e geométrica. Peças únicas criadas exclusivamente para cada cliente.',
     images: [
