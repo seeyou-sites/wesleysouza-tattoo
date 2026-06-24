@@ -66,10 +66,22 @@ export default function Portfolio() {
     }, 200);
   };
 
+  const scrollToTop = () => {
+    requestAnimationFrame(() => {
+      document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+
+  const handleExpand = () => {
+    wasExpanded.current = true;
+    setExpanded(true);
+    scrollToTop();
+  };
+
   const handleCollapse = () => {
     setExpanded(false);
     setActiveFilter('all');
-    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    scrollToTop();
   };
 
   return (
@@ -99,7 +111,7 @@ export default function Portfolio() {
 
         {!expanded && (
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <button className="btn btn-ghost" onClick={() => { wasExpanded.current = true; setExpanded(true); }}>
+            <button className="btn btn-ghost" onClick={handleExpand}>
               Ver mais
             </button>
           </div>

@@ -423,6 +423,10 @@ body[data-atmos="off"] .hero-bg img{opacity:.35}
   .pf-inner{flex-direction:column}
   .pf-sidebar{position:static;flex-direction:row;flex-wrap:wrap;gap:8px}
   .pf-collapse{margin-top:0}
+  /* floating filter bar while portfolio is expanded on mobile */
+  .pf-area--open .pf-sidebar{position:fixed;left:12px;right:12px;bottom:12px;z-index:45;flex-wrap:nowrap;overflow-x:auto;gap:8px;padding:10px 12px;margin:0;background:rgba(13,11,8,.94);backdrop-filter:blur(10px);border:1px solid var(--rule);box-shadow:0 12px 40px rgba(0,0,0,.6);overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .pf-area--open .pf-sidebar .pf-filter,.pf-area--open .pf-sidebar .pf-collapse{flex:0 0 auto}
+  .pf-area--open .pf-gallery{padding-bottom:88px}
   .marquee{font-size:32px}
   .studio-info{padding:30px;text-align:center;align-items:center}
   .studio-block{align-items:center}
