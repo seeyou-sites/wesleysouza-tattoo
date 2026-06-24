@@ -52,6 +52,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <SchemaOrg />
+        <meta name="google-site-verification" content="OYM-l4G25a1S4U3SF24oRu80BbpNTZgDnx9a-uGy4VE" />
       </head>
       <body className="grain" suppressHydrationWarning>
         <TweaksProvider>{children}</TweaksProvider>
