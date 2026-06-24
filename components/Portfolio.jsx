@@ -106,34 +106,36 @@ export default function Portfolio() {
         )}
 
         <div className={`pf-area${expanded ? ' pf-area--open' : ''}`}>
-          <aside className="pf-sidebar">
-            {FILTERS.map((f) => (
-              <button
-                key={f.key}
-                className={`pf-filter${activeFilter === f.key ? ' active' : ''}`}
-                onClick={() => handleFilter(f.key)}
-              >
-                {f.label}
+          <div className="pf-inner">
+            <aside className="pf-sidebar">
+              {FILTERS.map((f) => (
+                <button
+                  key={f.key}
+                  className={`pf-filter${activeFilter === f.key ? ' active' : ''}`}
+                  onClick={() => handleFilter(f.key)}
+                >
+                  {f.label}
+                </button>
+              ))}
+              <button className="pf-collapse" onClick={handleCollapse}>
+                ↑ Ver menos
               </button>
-            ))}
-            <button className="pf-collapse" onClick={handleCollapse}>
-              ↑ Ver menos
-            </button>
-          </aside>
-          <div className={`pf-gallery${filterFading ? ' pf-fading' : ''}`}>
-            {filteredAll.map((it, i) => (
-              <figure
-                key={it.id}
-                className={`gitem ${GRID[i % GRID.length]}`}
-                onClick={() => setLightboxSrc(it.src)}
-              >
-                <img src={it.src} alt={it.alt} loading="lazy" />
-                <figcaption className="cap">
-                  <div className="t">{it.t}</div>
-                  <div className="n">{it.n}</div>
-                </figcaption>
-              </figure>
-            ))}
+            </aside>
+            <div className={`pf-gallery${filterFading ? ' pf-fading' : ''}`}>
+              {filteredAll.map((it, i) => (
+                <figure
+                  key={it.id}
+                  className={`gitem ${GRID[i % GRID.length]}`}
+                  onClick={() => setLightboxSrc(it.src)}
+                >
+                  <img src={it.src} alt={it.alt} loading="lazy" />
+                  <figcaption className="cap">
+                    <div className="t">{it.t}</div>
+                    <div className="n">{it.n}</div>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         </div>
 

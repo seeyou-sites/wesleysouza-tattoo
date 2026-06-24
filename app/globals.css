@@ -210,8 +210,9 @@ body.drawer-open .drawer{opacity:1;visibility:visible;transform:translateY(0);tr
 .gitem-uniform::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(13,11,8,.85) 100%);pointer-events:none}
 .gitem-uniform .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:flex;justify-content:space-between;align-items:end;opacity:.86}
 /* portfolio filter area */
-.pf-area{display:flex;align-items:start;gap:24px;margin-top:14px;max-height:0;overflow:hidden;opacity:0;transition:max-height .01s linear,opacity .5s ease .05s}
-.pf-area--open{max-height:20000px;opacity:1;transition:max-height .01s linear,opacity .5s ease}
+.pf-area{display:grid;grid-template-rows:0fr;margin-top:0;opacity:0;transition:grid-template-rows .6s cubic-bezier(.4,0,.2,1),opacity .45s ease,margin-top .6s cubic-bezier(.4,0,.2,1)}
+.pf-area--open{grid-template-rows:1fr;opacity:1;margin-top:14px}
+.pf-inner{display:flex;align-items:start;gap:24px;min-height:0;overflow:hidden}
 .pf-sidebar{display:flex;flex-direction:column;gap:8px;min-width:110px;position:sticky;top:80px;padding-top:4px}
 .pf-filter{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--rule-soft);color:var(--bone-dim);cursor:pointer;background:transparent;text-align:left;transition:border-color .2s,color .2s;white-space:nowrap}
 .pf-filter:hover{border-color:var(--rule);color:var(--bone)}
@@ -419,7 +420,7 @@ body[data-atmos="off"] .hero-bg img{opacity:.35}
   .gallery,.pf-gallery{grid-template-columns:1fr}
   .g-a,.g-b,.g-c,.g-d,.g-e,.g-f,.g-g,.g-h,.g-i{grid-column:span 1;aspect-ratio:3/4}
   .gallery-initial{grid-template-columns:1fr}
-  .pf-area--open{flex-direction:column}
+  .pf-inner{flex-direction:column}
   .pf-sidebar{position:static;flex-direction:row;flex-wrap:wrap;gap:8px}
   .pf-collapse{margin-top:0}
   .marquee{font-size:32px}
