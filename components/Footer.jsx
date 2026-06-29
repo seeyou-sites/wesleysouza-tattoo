@@ -39,8 +39,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="foot-bottom">
-          <span>© 2026 Wesley Souza Tattoo · Todos os direitos reservados</span>
-          <span>Feito por seeyou sites</span>
+          <span>© 2026 Wesley Souza Tattoo · Todos os direitos reservados a See You Sites</span>
+          <span>Feito por See You Sites</span>
         </div>
       </div>
     </footer>

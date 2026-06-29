@@ -30,11 +30,13 @@ export const metadata = {
     creator: '@wesley.souzatattoo',
   },
   icons: {
-    icon: [{ url: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23c9a86a"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9L4.9 19.1"/></svg>' }],
+    icon: [{ url: '/assets/icon.jpeg' }],
+    shortcut: '/assets/icon.jpeg',
+    apple: '/assets/icon.jpeg',
   },
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   alternates: {
-    canonical: 'https://wesley-souza-tattoo.com',
+    canonical: 'https://wesleysouza-tattoo.vercel.app',
   },
 };
 
