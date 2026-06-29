@@ -2,13 +2,13 @@ export default function SchemaOrg() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://wesley-souza-tattoo.com',
-    name: 'Wesley Souza — Tattoo Artist',
+    '@id': 'https://wesley-souza-tattoo.vercel.app',
+    name: 'Wesley Souza — Tatuador',
     alternateName: 'Wesley Souza Tattoo',
     description: 'Tatuador autoral paulistano especializado em lettering, preto & cinza, arte geek e geométrica. Peças únicas criadas exclusivamente para cada cliente.',
-    url: 'https://wesley-souza-tattoo.com',
+    url: 'https://wesley-souza-tattoo.vercel.app',
     telephone: '+55 11 97695-0005',
-    email: 'contato@wesleysouzatattoo.com',
+    email: 'seeyousites@gmail.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'R. Samuel Laurence, 145/153 - Jardim Maria Fernandes',
@@ -54,10 +54,23 @@ export default function SchemaOrg() {
     },
   };
 
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Wesley Souza Tattoo',
+    url: 'https://wesleysouza-tattoo.vercel.app',
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+    </>
   );
 }

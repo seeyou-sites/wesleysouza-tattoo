@@ -3,7 +3,7 @@ import SchemaOrg from '@/components/SchemaOrg';
 import './globals.css';
 
 export const metadata = {
-  title: 'Wesley Souza — Tatuador Autoral em SP | Lettering & Preto e Cinza',
+  title: 'Wesley Souza — Tatuador Autoral em São Paulo (SP) | Lettering & Preto e Cinza',
   description: 'Tatuador autoral em São Paulo especializado em lettering, preto & cinza, arte geek e geométrico. Peças únicas e personalizadas. Agende sua sessão.',
   keywords: 'tatuador SP, lettering, preto e cinza, tatuagem geek, tatuagem geométrica, tatuador autoral, tattoo artist São Paulo',
   authors: [{ name: 'Wesley Souza' }],
@@ -30,8 +30,11 @@ export const metadata = {
     creator: '@wesley.souzatattoo',
   },
   icons: {
-    icon: [{ url: '/assets/icon.jpeg' }],
-    shortcut: '/assets/icon.jpeg',
+    icon: [
+      { url: '/assets/icon-round.svg', type: 'image/svg+xml' },
+      { url: '/assets/icon.jpeg' },
+    ],
+    shortcut: '/assets/icon-round.svg',
     apple: '/assets/icon.jpeg',
   },
   robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
